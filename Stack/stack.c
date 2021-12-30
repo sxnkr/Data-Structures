@@ -50,16 +50,20 @@ void status()
 {
     float free;
     if(top==-1)
-    printf("\nStack is empty");
+    {
+	    printf("\nStack is empty");
+    }
     else
     {
         printf("Stack top element is %d",a[top]);
         if(top==size-1)
-        printf("\nStack is full");
+	{
+		printf("\nStack is full");
+	}
         else
         {
-        free=(float)(size-top-1)*100/size;
-        printf("\nFree space= %f",free);
+        	free=(float)(size-top-1)*100/size;
+        	printf("\nFree space= %f",free);
         }
     }
 }
